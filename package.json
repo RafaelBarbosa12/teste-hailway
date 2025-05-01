@@ -18,6 +18,8 @@
     "@types/node": "^22.13.5",
     "@types/ws": "^8.18.1",
     "nodemon": "^3.1.9",
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0",
     "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
@@ -32,5 +34,9 @@
     "pino": "^9.6.0",
     "pino-pretty": "^13.0.0",
     "qrcode-terminal": "^0.12.0"
-  }
+  },
+  "scripts": {
+  "postinstall": "patch-package"
+}
+
 }
